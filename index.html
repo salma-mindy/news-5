@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-image {
+            background-image: url("https://www.vhm.fr/themes/custom/vhmgroupe/public/images/actualites.jpg");
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            height: 60vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        p.lead {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #000;
+            ;
+        }
+        
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+        
+        #sticky-footer {
+            flex-shrink: none;
+        }
+    </style>
+    <title>Déconfinement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <h1 style="font-size:30px">
+           Déconfinement : Une partie du code source de StopCovid sera publiée mardi « pour que les codeurs vérifient comment fonctionne l’appli »
+        </h1>
+    </div>
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-9">
+              <p class="mt-1 text-justify">
+                  « C’est une étape importante ». Le code source de l’application française de traçage de contacts <strong>StopCovid</strong> va commencer à être publié mardi, permettant à tous les codeurs intéressés d’aller vérifier comment fonctionne l’application. « Les premières briques de code vont être publiées mardi. Ce sera une première étape, d’autres lignes de codes seront publiées dans les semaines à venir », a indiqué le secrétaire d’Etat chargé du numérique, Cédric O.
+              </p>
+              <div class="mt-1 mb-2">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExMVFRUVGB0ZGBcXGBgYGRsYHRYYHR0YFxodHSggGBolGxcYITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mICUrLS0tLS8tLS0vLy8tLy0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALQBGQMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAIDBQYBB//EAD8QAAIBAgQDBQYEBAUEAwEAAAECEQADBBIhMQVBUQYTImFxMoGRobHBFFLR8BUjQuEHM2KCwlNykvEkstKi/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAIDBAEF/8QAMREAAgIBAwMCBQIFBQAAAAAAAAECEQMSITEEQVEiYRMycYGRQlIFIzND8DShscHR/9oADAMBAAIRAxEAPwDVrbi6JEZ436jf7UdjfZykRyBB933olmgeLKIGhO3n84rl4TAMHxCI6CT9hSqDT5O1asZahOXkKhfCu5VtDrIn6xReKBLBRsBrUmMxYsKDEzoB1NTxRSblLszu8qS5Y6ziMqklQAOcj71nuO8aU3Lbo4Itt7OuoIIJkaDesN247ZMrlB4n5KPZX3fuaweI4xibmrXsvkun2+9dc5z+VbGpY8WF1N2/C/8AT31u2NhRs889gJ9Saq8T/iNZTkn+5x9hXhFwlvauO3qT+tRi0g/p+f8Aau1k/d/sJ8TCuIX9WetY3/E22CSrqJ3CBj96p8T/AImn+k3T7gv1rACPyj5n6mmteG2nwFDg3zJguor5YxX2NZiO3999kY/9zk/IVX3u1GKb8q+79TVEb42HwFPUaTEVxYYeDj6vL5r6bBl7i+Jbe8R6EfYGhbl529q6597fqKYRTadQiuESeWcuWzmXzb1/Zq64Hxy5ZdQzkoSNSTKnkZqmroWZHUUSgpKmdx5ZQdpnv/ZDiQuW3Vm8amT5g7EfSrjOc0gwB1rzLsLxGHsOT/mJkb1iP/stehX8SII1ltBoazptx90aM8Ep2uHv+R2HYYhsxKyp0G1WV7DE84jpQOHsKkEwAKPvXxIgCD51oxy88mSa7DrVyDCsffXcTZM5p9aix+JVRnK6eWvvqNOKIVnKxB1nKfrTKdN2K4WgqynhnY/CoeG4lVNwNpLSK5+OBXn8aqTjUe4VGun7FLKdFIY21RdX8rZpO2utCcJxgVG8MSd/KmmzIMBhI11qDhdhwig6jUQY6mknkqmCjSdl5hL6sIkTRcLMEa1T30CkSsHrRdlxIBOvKqxmnsI49w68gIg0Fkairk6dKjvXABsa7ONoWwE4ZSZJ1py2CkiZB11oW3cynwyxmoOPcYFtVUghn0FThkVbjqLbpAr8ON64WTwrI26g9KnxuIugld8mpOuoA5VZ4OwFRQp5fHzrl/EKurHlE12ztuzN4ziYuFMrEKfaieVWuex+dadawlsAuFT1Aiifwy/lHxrPLJpk7VjunwcuKty0VYRmEeLzoPg7hkQztIMHmNP1qbEtJAEaCAPh+lVNm2cPeYt/lPzn2X1n46VtlJLcjFWqNNbMk1QdrMVluIAdAjEeoBj5/Srm3iAF8RAgTPLaax3afEK72ym0FSYgE76fGsuW4Y6fPJs6KOrKmeO8Rctfusd8xHwMfQfOh4ori1vLiLo85+IB/WhqrD5UZ8t63flnIrlImmzTCDjvSFsdBXBXaAHiuGmzXCaDhxqZT6QFB0bFdGlOiuEUAansliciKf8Ao3vlIb6k17FIc5hsuuu1eHdmX8V1Oqqw9Rof/sK9MwmNL20CBiCq5zH9Ua61le02j0GteKD+qNbaxSzDKGmnXjqvTp0oRbKwCDGmutC3eIqj5VcuY16DzJrr1NavBlpXRZ3uJLmynYaRzo7hNnwsYAkyBVZgysaEEnc0dZsuBpJpoTbepoWVJUR3kBBGh151W4Dhqd7dJEEQVj51bNiVQQ6/Ks7iccn4gEEoGEGZHwppO9wxrdoPxfFCri0JJMQ3KrfB4VABmOoM786Hs3FySsEAVHw11ugSSp6H1rsWrGmttg7H3A5EcqHtypB3H0ol8MAIBE1VHGwxQBiw6frXMkXz3Ejvsi+XEzPppUL49QIOpqp/HGctwG3p4Sefv60XhiBE6jrTTybLsI40d/y/HpFV2HIxN/MyDIs5Z69RRWMAvsLaaINWYfSrC1Z0CqAAKE48I7x9QDFKbb5ROU7eXpVNxK7mJGp/Wrbj6wmjeOdP1qtwGGa4AwOxifOpzk70lI8amSW7jtayFGVd5j6c6j/EH/qGtFbR1SDB/Sof9vypqJ6inXHsJDI0zO2w6aelCXcX3lsobbBbjROnxA5bb0NbZrqu5ZgVGkbQBrPnqPjVnw22XCZiCE5DrEST6TW3PieOG73fYnhyqctlsIu7q1k5ZAiTJJEaGgeNcJvNZzl1PdnMFAA8AGs+ca+7zq1vIVuB1Ega6dNvuaMiUYFfCwOvkV51i0Wnq5NUckotNeTwLtVay4mfzKPqR9CKqJrQdtU/yn9R8p/41n23owu4IbrI1mZw0yuk001UynZpTTZpUHRxNcmuUqDh2a6GptKg6PmnVEDTgaALHgVzLiE/1Bk+Uj5gV6RwHi727XdqJhjmnXwzy+J+FeVWbuVkf8jq3uB1r1DsqJvvb0hlJ+EbfOs80/iKu5uwtPBJPs7LzGvca4VgoGEiR9Kbh1E+AZGGhmCG+OtWF3Bu8OHYlRoD0rmDQO8OCCvPz9avPA48GeOZSVE2AubAhZHKIPuq9xmMPdgWok6elZniVliw3yru6nX31Phy2jWyGBGsn961GE9Evb/s5OF7hdy44M3NVXpQtmLz5ysIogZhv50ziGPuIjL3e5AB9asVuKohp9kctK5kuTtPc7H0rgrMTh7lvxIwjeOtSWMczLnVPEOh+tWC3lidCOflQgwEkski2fajn6V1Ny27nU63Y+3xZrhAtjXYk7L1FWFvCZSAupOrHzoXBrZtPCSFI1kc/wBmrV7a6H36VRJpbiZJb7cDmthgVdQ3rWWxt+5bu/h0Pt+yTrAPLzFaDFX8i5tZbRR1NU9/C92RcIDXxrM7f6fShrWwxuuS54epsKqMsjmw+pFT4vi1tBIYEnpVBa45evT3aiD15dffQ68AYKzgyxMkH5ijXS9PCBw/dyT3sM165mknMNemnSrPBWxb8AG2tCcIugL3eoK8jzo+zbaam5fE9UUI7SphlzEaGo+986bbYjfWn90vlTqKfIpkXwF1V8L+F9SI0k6fOrR8UD4GQW7hEgrGVonQfoaWGYhhbYtGbYR5n15UTicDn9BBmNjP2gVqyylkSTFxKMG6GWirIrkEESI1HkT5iq7H4lsOrKZa3dEKfyltCD5azR13FthwA03LZM5o1HqOlVnFMaL1yzbRkKlpYA7R/Yms03Ufc0Qj6r7Hmna61OHnmjD6x9zWRJ+lb7j+Gm1eTmMw94n7ivPlOg/f73qPTP0te5q/iEf5il5R2mmu1witJ542aQNI0hQA4UqQpUAKuU6uUHRUqVcoAdEgjqP7/avROyeNIu4a7r4gAY13XKfqfhXnanWtZ2UxOW3abnauwfTNm+jVDPwn4Zs6Tdyh5R602MdHkKxQjUEAa+VSYcm5azFGAJO0HShMUXysZYc40NXHC7i5ANYK+YrkJTttkJKKXBQYgta/mW3zKN1YGD76mwzZruXQAjMsfOh8diu4LW1hwxkA8p60Xgdbxgeyg28ztTObmmmdScUP4tZu5VCwYYGSY2ojDY9riZgoGsEb60zH41MphhK8idaqMPxCL5OyMoO2gPKazQnbLL1KqL1sLnZVciDqRt8etWpXKIQjKKzZx63b6nN4csGOZ/8ARq0vYu2iCJgaACtUJQjbszZlJ0qFGe9EDwjX37fSrR3UTMaD4aVSXMRcCi6lqGXqd15g1X2C2LLPPdKTrG7HT9B8K5q/I2htX2Rz+Jk3ZIJj2ByE8/hR1zA55N1yPQ1OcFkSVAOm+5NR4S+DIYCZ0mQadN1pYNrmIBwRxYLE/wCWXKzPPkftV7+OBI1GtA2MErLcRtiZAnkRUVjCLJkmRpz2qak4qkM0pbsmx+DzuGDR6fX99KYOJtbbJPin4jyobOquAGJnSPvRH4YMVY65DpR8RXsc0VzuT4niGWDqc37in/xVelQWbylirgqKE/BWf+s3x/tSTU5u4ul7k1S5RYYckupUAmDm6zoN/jRVy620Ea8tagwxbM8LtAHzP0Ipj4nJbh9uobU8z51tZCKYTxDKUltNeen7/vWW43Y/lvdRQjIcwfryj4VbY3jCXJCpcdhoFynJ6loiOdAPhmuKO8fnMIPDOkAg7gVnyK3sbMT08mQu3+9ztEZtT6849815tkjMv5WI+BI+1er8UwRtMoMQwJHoT09frXmfFbeXEXV85+MH9aj0+05I2dbUsUJIEpRXa5Ws8sYRSinUqAFSpKJ219Kmt4R20CN8P1rjYyi3wQGlR1vhV1uQEdSPtUi8GaYLAaToCf0rmpFFhyPsVk0jVjdwVtGCsW23ECrC3wy0P6Z9SaHNIaPTyZna0HZt9Lyf9rj3gz/xqcYRBsq/AUNw45MXHJ0I9/tf8alkeqDRbDjeLJFt96/J61wfiqPaBcnMBy1nTeKnbiJZAgV1cD2mHL0qs7KXC1hFWF8TW2fQnfMPkwqzxGFKMLouZspg5to86bEotbiZtpNDMLgUcwD4t2adZqNXaxeZEAbMNSDtVjisUgZcsAtzH2qXDImYwJhdTuZNJJWwjJpb7lXxPBDMWylYUE8511qTBYpFQhjmTkAIMxz+fxq3w+HDzMjagOJXltTKMCTC6TPnRokk90TU7YAt9czXLNuc3KPmKsMHiRcVQSMykyh8JHn6U/Bm0gBzR8RrzqDF2ExGiEEg6sNx5Uigue5S09hNjDdJtgMomCRqPQUc9gKmiiBsKhBFlIKwFG450047NkyNAOvipnFVa5Ep8LgIt2PDpmXoJqS3oPGC3nFBtj3JgJmPUHSpznkBniByrsZXwFediJ8Si3GP+kEA+tQPxEOYAIk+0RpFSW8AjO5Ouka9alfBSdyAPhS02g1Lscw9pA4IA20Pn1NEPbYTBEH61WYo921uT4ToTtvVth7m8mRTwS7nJttbBKYaU8USBp50D+FHQUXfxAA0G2/pUX8TToKrJQ8k0plPa4sXvOE08ZBJMEeEASOZgfKrJQijYOxEMfUfSguGYJRZRAMzsCzXBBIYgEkz5nbyFOt3O7bu7i+QJ5jXn1rltP1HG72iiZrhjTMCeQPn96aEKgyRP9I3A845mu4qyDJQicukzAH350Cl5tcwVuUowO/MfvrXZNpbgtKZU9owYRjvJG87/TY15r2nsf8AyVj+tQPfJH3Feq8VwjPZuFlI7sypJ3jmPKCa807ZCO6udDH3/wCNYsbksu65PTtT6Vrwyut8Ffmyj4mnX+FKi5mcnyAA1980ZxJ3JUJOuuk+6prV0MIdYPmNK06pck1hx21QJgOHWnUGCTzlj9oon8LbtnVFynmRMHznlRK4cDxLA9NvhW3xPZvh9jD2Dj7l7PfXMO7nKNFJ2GoGYbzJ5UJOT9iklHFFbbnnj49VYi2M09NBNQfibuYuFAkR8PfXpf8Ah+vC7zphhgyboRma5dh1bKw2BY6kGfZA0Nd4Fds4zjAtnC27C4RboyLBV3S6FVmAUDQsW58ulUWNEHmd79jzwtiLS57lhwjH2ijqpnoxEGrrsx2dxOMRrtq3KlyslkUAgDTUzsRy51sOBdt7mJ4jdwWJW21i6920qZdshaAx/qlUIM8yIipuzPDSicV4dbYqykm2wJBHeWzkM8iAqSetHw4s58ecTB8X7NXsLc/+Rbgt7JkMpA6EaTqPPXzqsxrGCqiWOleh9tzctcOwWGxFxWxYILHNmbKqOGaTq26CTudawVwrbEn+5qc1TL4pa4XwCcPsOkhojlrOtD405L1l+jAH0J1+VFYDF95MiCOnShuPW5tyOVH6qYs0vh3HsbjgGIuAXbSCSWDjqORj5VcYXC3rilGYhQdV2Jb71n+yGLm/bbT+bb59cob7RWzvWWXNcGrDdZ0I8vOs8W6pdjuf+pfncr8PgnLkSDk0E8vSmWsNeDuQT5wat8EQiAwQWEzuNetRtiALmkeJTPqKe5EL5HYTjD2wcygxvE048ZW4e8YGBsI2qHD3GZngAw0aRB050NxHGhPDAbTUbR5etMpy7pMXT4Cn4it491a3bckbDy86ucCLNu1kyZSPL5ms1eCWclxYGw/tV3ZvKYN24qhv6QeXQ1aCXLJT3S08EHFMUoacxcMICjaddSf3tVf+GJIKsrCZNuYG2wNXN7G2F0Go6Zaq+9Qv/kueYgRNI4Jy5HjJpcEicQIBUqFjZTofUdasbd0FRI1jeq2+ovnS3lA01YT6VX9xcLrakArqTJ8/jtU5JQlq5Gfq9mXyhwIWG5nqKY2LI0ZSY6a0Lawl3Ui4oJ3AH76VE/DnDeO6QORXT4/Gn1U+DmhPhhGORb3hBy6bEUDgeI5QUIlh4YG5jY+/Si8VgfCR3rTyOkz0p+HwYQIYCsBq3U85qbkk9zqpIIwaPccG4MqgezzPrVh3Sf8ATFV+ExJ1zETuCOhn9KM77zrTBRoz5JSsCFu0z/ymySZBXTYbwaHxFx7tx7F0yyAZWgCZkjTpofhy0rR90vXbkQCaoe0f8u7busAEfwXH3ZV/p9FnU11wVOx1JtgyXoIS4crLoGOxG0H9f/VFd2JByDTmANNd/PamYgqfAwno0eE+YPKq3EX3seKHdAfZG5EAz0A1+XLeoTbjs+LDSpOzQYu0zoyLBlSIOhggz9a8f7V2pwxP5SD84+hNeqXuL2vaW4qkDxhjDa7CN68640guWroUyCCQfpS5pLVGSNvRxuE4+xT4O9NpGP5RPuEH6UTYuBxI1FVfBYexl8yPv96Ow3D0XqT1k12SSsricmk1xRHxVAqSJBJjQ6HrIrd9m+0+GxNixgOIW80Zbdu6J30VJI8SNELmEg841rAcWC+AAzqZEz0rU8B7U4XDWkW7gLd67aYsl05A3tZhJKEgqdjryquPYjnSbddgrh/C/wCG8cs2g5KFvCTuUuo6ANykPp/tBojGYsYDj73H0tu3iP8Aou21lvQXNT/2mslxntHdxWLGLYBXUoUUahQhlR1OupPOTtRmPON4hiAz2ne8UEKtvL4ATqBHsy0ZjTt+CSg3z4NuOwl5eLri7ZT8MbnflgwkEgsygc5YmCNIah+C9pbP8cxbm6i2Ht5M7MFUtbFsTJ0jS5HWsnwLgeOxivasOwS34XRrzKgmdCk67HlyqDtF2FxmCt97dVGt7FrbFgs7ZgVBAnnEUyfcRwV02U/GtL1x0fPluMFec2ZQxCtPMERR9q2pAbeRMnWqj+g16d/h32Lw72LdzF+N76lrVvO0C2P6oUiT4l0O2nMmpaXI0LIse7MLeuKsliB5mBVbexS3kdR00PUda9M7CcOt2lxl420uX8MpyKwmGC3J9CSkTvoetQdssBaxODtcRS2tu6/8u7lEBtSuY9SGSAd4aOQrihSsMmRuWlccGN7K3xksE7K+U+mb/wDJFejkZVdTOZQdZ3HI15R2ebw3k/KwYe8R/wAR8a2R4xevXBoFRVGdj/UIms7VSaOy9WOEn4r8Gv4NdzWVVpkDK3rQWKxoRz4CFUFJO06RFA4DjuVQWWWdiWA5RAH1Fd4vx1HC2wDmY8xtBiZ9RXd6I8yFg+9IZbQOYtJYmAJ6dTRuC4FcUZi6zvJE/s0VwooE8LA9T586JbMdm9AdhTKkclJvgoOKWO8tnxF8jQeQo3hN62VEKoZdwRr7zRxRogKvnGlVdtu7v5UXLm3ZtQT0A5UsOaf1OW6o0Vu8mWdPOK6Pa06fegbl25BMIVG4On750Jw7FC47r0gqFJHLWT60+mLlXf8ABOV1ZbXcJEwFk89qBvW1t3kJOpEA+f7NNu4Zg0948jYKZj1mh0uBrmRyWgSs6azz+VQyykq8WUjEsbReWaYk6AjTan5/AQ8c9fKJ/fpQ2JxS21zE7HY/QU3E3ldZCkq2/kOpHpPwrRJx/SxIp90P4b4xnOqg+EHkasLjgiI03qvsYZCPBpEbHeNJNECVBOeRUZpruM9wfCuvWDmgA6aD7UbmHQUKcMTJDAzrB5UJ/D7vVarGTSoWUYyds09+w3eZ4ERtqNvdBqDFXgQe8tkiIMQwI8x6025jiR4jpMgj96ipMZiFtqC+p2VeZP61q1xqyWlpmbbhaWszpeuWU1PdsJWANlJ1B0qtwXBjibTuLtyCCFLHUmZkAHrGtaJrJuMTfnSMqDQa661YPhlyErqwn3nePMTUXBTaTVFPiOJheJcNxCWs72LbqP6rZh9NA23KqHA62gPIj4E16cuHOVjA0BmMy6ZZ0Gs6zXnGEA7q23UuD7m9POo9TjUVsbegy6pboxfCMMS9xMxARuW+5H2r1Dh3YO0tlLuLxK2O89hWidRIzEkaxEjl1rzhRkxl1fzAn5A/rXp3+L63HbBPbMW2S5JA0H+WR8R9KvHdW/BNXFqK8tAfA+ymDZMRicSS2HwrNqkrnyCSxymYgrAB1J3qbEcHwOLwjY7h9plfDNmexc8QdUhijKSw1XaDB1Hof2Hsi9w3GYUeJzmMHc5rYA+LWyKA/wAFbTrcxaOpFtraHXl4nEHoYJkeVPCqQmXVqk/BF284Vaa5gMZhkVbOINtCEAUAlgV0GgJUkf7K0fFOIZO0OHXk+H7s/wC7vmHzVfjVZ/h1cTF4R8ExnuLiXrJ/0i6HEejg+65FVPb3Hd3xy3cnS0bE+khj8mNN2snTvT7MvOxQFni/EMKdrmZx6ZwwH/jf+VV/+Fd0tdxnDbzF7eV/CxmMr93cidpzL7xNGcbvrhe0Nq6zKtu7bGdiQAJR01J0GqJT7nGOGcPu4rGWb3f37+YhFgoCzZiAwEBS0EkknTSunGm/ukZTgvYC5fsd42JsWUzMmZ5mUcqZGg3Wfaoj/Dq4LOLw4kHVrZIMiXBBgjq8etYqyhu3O9cZgDJMbnf61cYNwjpdtwGRlcRtKsGEgcpFQlJJqjbjxuSd+KRrMRiLvD+K4hsOmbvWl7UEi4GHeArGoYFjqJ3bSrjtHi7h4VcN+0tg3LqCzaAy5UDIYjr4LjbDesBx3tXiWxAxc2luLEZBEZdjlZjNAY3tXcxIDYq8XYTAjQDyVRA/tTatmRqKkk9n3+wDwo5cU68nU/EQR8gfjW04O38tQcrKxIg6HMp5HkYisCmLU4m067ZgDPnp9Ca3fZ8jOUYSM+x/1Kf0rPktTT9ikKeJrwy9tkQxKhwB4gdHA+4qvw2Es37gacsba7bwBPPc1Nxbhz58tttlkgnYToJpYWx4IZYuL4lBiG6gHnTVe3cjdKy4HDbeWF8Mcwd/XrUTpcXdS3IFTHxFcFu2VGX+obBorsFf6rgAPMSKRHG2dVr45E+8E1W8VuszoNUIYHlP70q9XEr+YVn8ZcX8WAVJ0E1z9a+5xX4LTub11SrsACdo3HnXRZg5ECi9yK8h1aac96/I7u0Mu/iImZ3Ee+h8LxG3aOZlJfxZm3k9AP3tTqNhbRe8OBCkuMrEwSeeu4oXGYFAA6hmhpoTB8We6+iELvmbSpLmMu2wBdUEH8p1PPQU0Yxb0sXVLsFYjBIPEoGp0mT7vI1EttScsATzU+U7UKvGDlBghdjzKnkSKMGJOhi23mNKVLaw34Yy3w8K05iAdx5UrmHa3JTxDmh1H9qMuODGw8qMsZAIYn3UqjcqDVRXWbCkEgFWMEa7VB+HvdT8aJJUORsNSPv76ZnXr86rHJp2pHHjsixeK7tJRS5kCNTv1iantXQQXuZsxMAkjwnQGOm+9V1lhbtd41xm7xg4zawjAGNOYH1pt3G2jJV5JjYBiPdHqPKlx59Ka5T/AD9xXj1b+DS272a4onNlUmdN/DHyNVuO4z3TMvdElWA8P+oAj6t6ZTVSvF1R7ea1cOWcx7twZ0103Ogo+zx63eUrcS5IkjNaaIA0J0/vWiDS+YR45Pgfh+L23f22XXIViZPiGkTPsk+mvOs9x7DC2ModWVbhjLAjqI6gkT6irsNhrmRCyd6QDrKFiNdBpPiE1n+0FywzgWQyhQc2YkS0KIAbU+ysx5VLOk4NmnpXKGRGE42MmMtt+YR9R/yFbvg/bnB3MOMFj7dwi2YR1BO2gHhOYEDSdiKw/bFY7q4OR/v/AMao8RxFi+YBQR0+9cwO4Jlepajkkn5s9Su9oLVjFLewCG2i2wjK+1zxEksJJ5jWZ8NTca7f3L1t7Fq0ljvQe8dTLQRBgwIJGk6nWvJn4ndP9Z90D6UMzk7kn1NUSl5JyzY/239TSYfiNzBXc2Hv5GykSCshTuuunL5ULjePNec3LrG47bsxJJgQNfQAVR1yaattyTzO7jsWbcUH9K0LdxrNvQs0qKQsssnyw/8Ait2AA2UDoAPtQzXmO7HXfU1DXZopCucnyx1KuTXaBREmDG4gj9++vQuF4qLivuGAbT3frXny1sezWJhMO++U5T7iR9IqGdcM29I7Uo+x6BhLZIJf2n3HQch8KZxSAgVR458Ebz19KksYgESQRQ9i9N123y+EQdtJMDqalvYqaKvC4c+05KjMQSDqreZ5A9KsSQoAuO/k8kqR7tjUeOVc0srZTGYa/HTmKJwrGMmaY6iQVOxFNKqsNTs5asSfBdInafED8arb+He5dc3PEqQNDlnzHwqxdrlr2IcT7A5abj9Ki4FhO+m4/hhtRPlt++tLjVyT7CzlUbIjZVNPxF236+JesTRHC1EeG5buEakssGir3ZxGU+JwNTG4mntwbu1tFSmaSGJEAiJEjrI+danFLuRjkUti5N1SsyDQ+MxCqgLKW6QOvOqrEgW3Ade7nQA6qT5EUTexOXMqDMxGoDeEDqx5VDJBQaZWKb4BMEbZN0OYVmOh05VJg27q4JYFH2OhkjlTMNbjO15O8J/qGoA02HvFFnDLchQSCNpWBy/T513HLfSzs2jtzHgJmS0x32BA8zry/Su8P4fduBi102wwnKNxI6kaVxGv2vAQHWY88sfao7fEbreFVBK7mREbCepp/QpWItTVKgocGSACSWB3LHam/wAHt9X/APKmpj3dTmUAyRprtNdz+f1plPH4E/m+QPE2PwsNk8MgKlsmCCfCH6gbzzEzrqXjEo5KKCtwKrMpBWN+sDcHXy91D8TuX27q2qqucm0CCGlTEn3AZgf1irrA8Pto5VC2gjKYM+Z+sevKljBN2kPOtO4Fh7l4XWuOtwplmQRJOsgICQNAIPnVhiOPC3bLSCRGj+CdROu0xJgamKLvYeYDkjIQVOnITrFUvEGsXVC95mYEQcvinNIKkieR1k7VSTcN2yWqMqsgu4rC3LXe3e5LkElc4ZlLGY01029xrN2eGm7cJBy2wfDJOZmP/Hz6acq0H8AUkO7FmUaSqxyMkKQSwjck703HX7lpgS2YATMQRpz2IH/keVJklq3kXxvRtFmA7VWs2HJ/KQfn/wC6xhr0PjdnNaur5H6V52Nh+/3vU+lfpaL/AMQXrjLyjtKuUq0mAVKlSoAVKlSoAVKlSoAVdrlKgB6nnWg7PXP5Tr+R5Hv/ALqazoq47O3P5jr+dJ94j9TUsyuDNPSSrKvfY9KtY+zAYQCfdrQ34tO9MEZCRIG8kb1VYIK4Rcgzczmg89QPhT2wid6RluCU0iDrMTpyrMl4bKNJNotcXxVFGVfGxOzfPbWhcLYvswk5VI8Oug12H6eVE4GxmtKwtWzlMEGQZH01o+xYMEMoQe0DMgN08qeKS9yfc5hcOyZT3hbkdAPd/ehbmMWxiX8TqCoOwgsP3vUjX40uo63APaRSykddKru8m6/eskECM6kaaR6Rr8apdccWTUL5NZgLrXFzI2Yf6lideRFS3sfbYMsOMupORiCf9JjWD+9KytoXLJDWmAQw0SSDM6iNqOsdp2Ah0Yn+kAg6678wI1qmtcMmsUk7ROeIDEP3bx4NgRoR+aN9qsBetWVULMExtqT5/A1VWb7LdzJazXHBYyY58p2H9qI/jUENcsMCB5FdTv8AKpzae8irjLiPAZYxKXRlWZEyIKnUkbe4ij3wrZVAYrl1ncn1oN1S8mZQRPMaHTz33qTBF1QqTmKnTMdToN6g5J/KnaFqXA61fY66QDGumk7/AErPPiFFxsoaJ0MxqTv6Vem07xmAC9J1NNxOEBbWAkRlgHrz66j4UJZGtuB1JR5G9yHINsrrrMx767I/Mf8Axb9KhwoQgoxKsNOY26TU/wCAt/mufE/rXXNLaQJoq7Cql9HcNJBysVZP5hKgoI00A06zzq+s8QS20BhmAg5t/UTudKixWGW+rWmYHcjlB8vQ61Bw1HuoQ4VjaYozkTJUDWd9iNqMeR16bZ2VNWWDrevqYGhBEsQROuoA9Y91Dpwkp4mA2112MRoekekzVtgsDaK6KJ6gx9Klv4IKJGZifzMSB5+VaVgT3nuzO3ZQYjEJsSCw0iIMkdfdQlyyt0lTME6gydJBjr/6NWONwfOEzDWDE+s8v3rQNu1CzdJUaQNoPTNz1rk7k0n/AJQy9K2M9x/BrbuMq+yUBHPSI+oNeUXEyll/KxHzI+1evdoFbOrHYggGIB1mfPf515Xxi3lv3B1M/GDU8S05ZRN3Uerp4SAqVKlWk88VcrtcoAVdrlKgDtcpUqAFXa5SoA7RvCLuW9aPU5T75H/IUFTleNRupBH79wrklaoaEtMkz1Ds5aRluKVBYNIJHIjafcaskwCW71t4ymCNJifM86puzpm/o2UMuYee2nwNWvFMGxuWgjtmL5o3AA3Pp+tY4XpN2ZJZGHrcRXIJ0fUDbbeisRhldMpHhqox+CuKuZmE24YQCCevyq4wmIQpmBMRpKkTpuJiQKbTuRbVWR2cCmoQuJXYExP61R8UwTZ8ytm0ysrDcTy6kfUVrMHDKVAI1nXTXy1pnEgB48onzqslcbJQlUqKDht1FKq8G23sOdxv4W6GZ+FWGFw1lwy7gnQgQIkaAn0FUmJwChFULmu3CSQGiCSeXMA/eu4S4bClLjuqjRSNRPQ9DSJ0yklexdX8O4u2yomQVGsaQCJ+FWxsoxIIQgbjp7vnQVhmuukKci6hpABEcupqR8KxLh7RIaRmDCSOn760wsuw4YIBj3ZyMZ0Hs7cxQ2FxhZnRoVy3uOVY0NcxAFke1dUaQIzSZ5HqSaOtWFFskqFYjMSBrJk70tJ7cHVLbc4hu/kVgBBg6nzApl7FAtsyEcwJEbSfhTsDjCsd4AFbRXUzJ1gHpRbpyBK8tQCDR22ONU9ym4iJiWUmRlnQjUTVh3F3y+NPvYTMuoDHrApfwofmf4mnVVuhJX2YDjsWyIzLErbZhoDqDGs1YdmcMv4VIESJMTqTuT1mlSpOk4f3/wCQyfKiwuzbTMrEaHTQjQedRcB4m94HPHPYRsQPvSpVtM97gPHmKvA0B0Pp4dPShr6hiEiB4dt9AP1pUqhFeuX2KeALtThAllIJPj5nqGn6CvI+1KxiPVf1rtKo/wB/7Hoy/wBJ9ympUqVaTzjorlKlQAqVKlQByu0qVACpV2lQAq6Nj6fcUqVAG47MNJwxP5QP/wCf7VsUQF1Y6kqwnynlSpVkhxI35+Y/REuLGW05G8f2qo7NY13XKdkMDrG8GlSoXBE1SWxExqWifcKXEvYPpSpVb+0QX9QqcHYUm0xGvdB5887R7hVZxBZe6knL7cdW318taVKscm/ifY1Q+Y1nDjKAcoiBsIjaokduTEakaHz/AL12lWnJtRGI/hd1rl1w5zBICgxpI1Pr51Zqolp15fL+9KlXYb0EwbF4ZWsZSND0+OlUnCsbcbwM0gMVB5wPPrSpUr5R1cM1FpAcunL7VL3C9KVKtFIz2f/Z" class="img-fluid" alt="Image">
+              </div>
+              <p class="lead mt-1 text-justify">
+                La publication du code est considérée comme une condition nécessaire pour établir que l’application ne peut être détournée à des fins de surveillance de la population et d’ingérence dans sa vie privée.
+              </p>
+              <br>
+             <h5><strong>L’application « entrera en test laboratoire dès cette semaine »</strong></h5>
+             
+              <p class="text-justify">
+              « C’est une étape importante qui montre que nous tenons les échéances » sur ce projet, a souligné Cédric O. Le code source de l’application commencera d’être publié mardi sur le <strong>« Gitlab »</strong> d’Inria (Institut national de recherche en informatique), un site qui permet aux codeurs et développeurs de partager leurs travaux. Le secrétaire d’Etat a également précisé que l’application « entrera en test laboratoire dès cette semaine », puis « en test terrain », avec pour objectif qu’ elle soit opérationnelle le 2 juin.
+              </p>  
+              <p class="mb-4 text-justify">
+              Un certain nombre de pays européens tentent de mettre au point une application de traçage de contacts, pour tenter de limiter les risques d’une reprise de l’épidémie après le déconfinement. L’application pour smartphones permet à un utilisateur qui découvre sa contamination au coronavirus de prévenir automatiquement et de manière totalement anonyme les autres utilisateurs qu’il a pu croiser dans les deux semaines précédentes.
+              </p>
+              <br>
+              <h5><strong>Des dangers sur la vie privée des utilisateurs</strong></h5>
+              <p class="text-justify">
+              Le projet suscite des débats acharnés dans la communauté scientifique. Certains experts estiment que cette application présente beaucoup de dangers au regard des risques qu’elle fait peser sur la vie privée de ses utilisateurs, y voyant le début d’un glissement vers une société de la surveillance.
+              </p>
+              <p class="mb-2 text-justify">
+              D’autres experts acceptent le principe d’une telle application mais critiquent l’architecture « centralisée » choisie par la France, préférant l’architecture « décentralisée » choisie notamment par Google et Apple. Ceux-ci développent leur propre projet et refusent de coopérer avec le projet français.
+              </p>
+              <br>
+              <h5><strong>« Des retours positifs » sur l’appli britannique, semblable à StopCovid</strong></h5>
+              <p class="mb-2 text-justify">
+                Le gouvernement britannique teste depuis mardi sur l’île de Wight une application fonctionnant comme le projet français sur une architecture « centralisée », et sans la coopération de Google et d’Apple. « De ce que je comprends, les premiers retours sont globalement positifs » même s’il y a « des choses à améliorer », a estimé Cédric O, qui en a discuté avec Matthew Gould, en charge du numérique au sein du NHS (service public de santé britannique).
+              </p>
+              <p class="mb-2 text-justify">
+                Ainsi l’application aurait enregistré « 30 % de téléchargements » dans la population en quelques jours, et l’application fonctionne « de manière très satisfaisante » sur les iPhones d’Apple (les smartphones qui posent le défi technique le plus grand), a estimé Cédric O.
+              </p>
+              </div>
+            <div class="col-md-3 mb-4">
+                <h4 class="font-weight-bold"><strong>D'AUTRES ARTICLES</strong></h4>
+                <hr class="title-hr mb-2">
+
+                <!--Carousel Wrapper-->
+                <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <a href="https://salma-mindy.github.io/actualit-0/">
+                                <div class="view">
+                                    <img class="d-block w-100" src="https://snyk.io/wp-content/uploads/JavaScript-Report-Feature-.png" alt="First slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5 class="h3-responsive font-weight-bold">State of Javascript frameworks</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Mask color-->
+                            <a href="https://salma-mindy.github.io/actuality-1/">
+                                <div class="view">
+                                    <img class="d-block w-100" src="https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2Fshutterstock_535255936.jpg&h=570&w=855&q=100&v=20170226&c=1" alt="Second slide">
+                                    <div class="mask rgba-black-light"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h5 class="h3-responsive font-weight-bold">Alibaba Cloud</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/.Slides-->
+
+                    <!--Controls-->
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                </div>
+                <!--/.Carousel Wrapper-->
+
+                <h4 class="font-weight-bold mt-4"><strong>AUTEUR</strong></h4>
+                <hr class="red title-hr mb-2">
+                <div class="card">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEdHvhwankOnQ/profile-displayphoto-shrink_100_100/0?e=1593043200&v=beta&t=f7VLwOg26e_O4D5XnM2Q0AOxmt40Me4jV6xXEgm0jqo" alt="John" style="width:100%">
+                    <h3 class="mt-2">Sheila Melissa</h3>
+                    <div style="margin: 24px 0;">
+                        <a href="https://www.linkedin.com/in/anoa-sheila-melissa-aka-96a859162"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100007165728234"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <p><button>contacter</button></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="sticky-footer" class="py-4 text-white-50" style="background: #000">
+        <div class="container text-center">
+            <small style="cursor: pointer;color: antiquewhite;">Copyright &copy; <span style="font-weight: 900;">Sheila Melissa</span></small>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
